@@ -2,9 +2,10 @@ import axios from "axios";
 import { logout } from "./shared/utils/auth";
 
 const apiClient = axios.create({
+  
+  baseURL:"https://chat-g1d3.onrender.com/api",
   //baseURL: "http://localhost:5002/api",
-  baseURL:"https://chat-j6y5.onrender.com",
-  timeout: 1000,
+  timeout: 3000,
 });
 
 apiClient.interceptors.request.use(

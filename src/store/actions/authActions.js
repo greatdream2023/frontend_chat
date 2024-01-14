@@ -6,6 +6,7 @@ export const authActions = {
 };
 
 export const getActions = (dispatch) => {
+  console.log(dispatch)
   return {
     login: (userDetails, history) => dispatch(login(userDetails, history)),
     register: (userDetails, history) =>
