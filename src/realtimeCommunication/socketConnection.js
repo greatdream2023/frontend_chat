@@ -11,8 +11,8 @@ let socket = null;
 
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
-
-  socket = io("http://localhost:5002", {
+//http://localhost:5002
+  socket = io("https://chat-g1d3.onrender.com", {
     auth: {
       token: jwtToken,
     },
